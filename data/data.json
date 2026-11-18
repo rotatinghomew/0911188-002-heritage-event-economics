@@ -1,0 +1,55 @@
+{
+  "definition": {
+    "name": "文化活动消费观察",
+    "subject": "活动交易",
+    "table": "transactions",
+    "group": "merchant",
+    "measure": "amount"
+  },
+  "tables": {
+    "events": [
+      {
+        "event_id": "e1",
+        "name": "港口非遗周",
+        "date": "2026-06-13"
+      },
+      {
+        "event_id": "e2",
+        "name": "街区戏曲夜",
+        "date": "2026-06-20"
+      }
+    ],
+    "tickets": [
+      {
+        "ticket_id": "t1",
+        "event_id": "e1",
+        "kind": "combined"
+      },
+      {
+        "ticket_id": "t2",
+        "event_id": "e2",
+        "kind": "entry"
+      }
+    ],
+    "transactions": [
+      {
+        "sale_id": "x1",
+        "event_id": "e1",
+        "merchant": "tea-house",
+        "amount": 42
+      },
+      {
+        "sale_id": "x2",
+        "event_id": "e1",
+        "merchant": "craft-stall",
+        "amount": 85
+      },
+      {
+        "sale_id": "x3",
+        "event_id": "e2",
+        "merchant": "tea-house",
+        "amount": 31
+      }
+    ]
+  }
+}
