@@ -1,0 +1,124 @@
+{
+  "events": [
+    {
+      "id": "harbor-fair",
+      "date": "2026-06-13",
+      "state": "held",
+      "venue": "quay",
+      "controls": [
+        "2026-06-06",
+        "2026-06-20"
+      ]
+    }
+  ],
+  "day_status": [
+    {
+      "day": "2026-06-06",
+      "merchant": "tea",
+      "open": true,
+      "complete": true
+    },
+    {
+      "day": "2026-06-20",
+      "merchant": "tea",
+      "open": false,
+      "complete": true
+    },
+    {
+      "day": "2026-06-13",
+      "merchant": "tea",
+      "open": true,
+      "complete": true
+    },
+    {
+      "day": "2026-06-06",
+      "merchant": "craft",
+      "open": true,
+      "complete": false
+    },
+    {
+      "day": "2026-06-20",
+      "merchant": "craft",
+      "open": true,
+      "complete": true
+    },
+    {
+      "day": "2026-06-13",
+      "merchant": "craft",
+      "open": true,
+      "complete": true
+    }
+  ],
+  "passes": [
+    {
+      "id": "p1",
+      "event": "harbor-fair",
+      "capacity": 2,
+      "stops": [
+        "tea",
+        "craft"
+      ]
+    },
+    {
+      "id": "p2",
+      "event": "harbor-fair",
+      "capacity": 1,
+      "stops": [
+        "tea"
+      ]
+    }
+  ],
+  "sales": [
+    {
+      "id": "s1",
+      "day": "2026-06-13",
+      "merchant": "tea",
+      "event": "harbor-fair",
+      "cents": 4200,
+      "pass": "p1"
+    },
+    {
+      "id": "s2",
+      "day": "2026-06-13",
+      "merchant": "craft",
+      "event": "harbor-fair",
+      "cents": 8000,
+      "pass": "p1"
+    },
+    {
+      "id": "s3",
+      "day": "2026-06-06",
+      "merchant": "tea",
+      "event": null,
+      "cents": 3500,
+      "pass": null
+    },
+    {
+      "id": "s4",
+      "day": "2026-06-13",
+      "merchant": "tea",
+      "event": "harbor-fair",
+      "cents": 2100,
+      "pass": "p2"
+    },
+    {
+      "id": "s5",
+      "day": "2026-06-20",
+      "merchant": "craft",
+      "event": null,
+      "cents": 5700,
+      "pass": null
+    }
+  ],
+  "refunds": [
+    {
+      "id": "f1",
+      "sale": "s1",
+      "day": "2026-06-16",
+      "cents": 1200
+    }
+  ],
+  "terms": {
+    "venue_percent": 10
+  }
+}
